@@ -38,12 +38,7 @@ import {
   watchEffect,
 } from '@vue/composition-api'
 import { Picker } from 'emoji-mart-vue'
-
-interface IReactionItem {
-  reactionId: string
-  count: number
-  unified: string
-}
+import { IReactionItem } from '@/models/Reaction'
 
 export default defineComponent({
   name: 'Reaction',
@@ -148,7 +143,7 @@ export default defineComponent({
         count: 0,
         unified: '',
       }
-      
+
       // @ts-ignore
       group.unified = String.fromCodePoint(...splitItems)
       group.count = 1
