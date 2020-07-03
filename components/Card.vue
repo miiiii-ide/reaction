@@ -26,9 +26,11 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
+<script lang="ts">
+import { defineComponent } from '@vue/composition-api'
+export default defineComponent({
+  name: 'Card',
+    props: {
     title: {
       type: String,
       required: true
@@ -38,5 +40,5 @@ export default {
       required: true
     }
   }
-}
+});
 </script>
