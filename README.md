@@ -1,4 +1,4 @@
-# nuxt-reaction
+# reaction
 
 ## Build Setup
 
